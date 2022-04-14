@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px;
+    border-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    /*nav tests*/
+    /*margin-left: 265px;*/
+}
+
+.main {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+article {
+    align-items: flex-start;
+    min-width: 99%;
+    padding-right: 1%;
+    padding-bottom: 0vh;
+    color: rgb(255, 255, 255);
+}
+
+.projet {
+    background-color: grey;
+    margin-top: 1vw;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+}
+
+div.presentation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.presentation>* {
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+p>a {
+    color: rgb(32, 32, 32);
+}
+
+nav {
+    min-height: 100vh;
+    background-color: aliceblue;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    /*nav tests*/
+    position: fixed;
+}
+
+ul {
+    padding-left: 3%;
+    padding-right: 3%;
+    list-style: none;
+}
+
+li>p {
+    color: rgb(16, 16, 16);
+    padding-left: 10%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(78, 78, 78);
+}
+
+.projet>img {
+    max-width: 100%;
+}
+
+.projet>p {
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        min-height: 20vh;
+        width: 100vw;
+        max-width: 100vw;
+        background-color: aliceblue;
+        border-radius: 2px;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        /*nav tests*/
+        position: fixed;
+    }
+    .main {
+        max-width: 100vw;
+        margin: 0px;
+        align-items: flex-start;
+        left: 0px;
+    }
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
