@@ -56,7 +56,7 @@ h2 {
 
 div.presentation {
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: row;
 }
 
@@ -85,6 +85,10 @@ ul {
     list-style: none;
 }
 
+nav>ul>li>h3 {
+    margin-top: 0px;
+}
+
 li>p {
     color: rgb(16, 16, 16);
     padding-left: 10%;
@@ -108,6 +112,22 @@ a:hover {
     text-decoration: underline;
 }
 
+.perso {
+    max-width: 50%;
+}
+
+.etudes>p>a {
+    color: rgb(201, 201, 201)
+}
+
+.etudes>p>a:hover {
+    color: white;
+}
+
+article a {
+    color: white;
+}
+
 @media screen and (max-width: 900px) {
     nav {
         min-height: 20vh;
@@ -121,6 +141,11 @@ a:hover {
         /*nav tests*/
         position: fixed;
     }
+    nav>ul {
+        margin-top: 16px;
+        padding-left: 1%;
+        padding-right: 5%;
+    }
     .main {
         max-width: 100vw;
         margin: 0px;
@@ -130,5 +155,11 @@ a:hover {
     body {
         margin-left: 0px;
         margin-right: 0px;
+    }
+    div.presentation {
+        flex-direction: column;
+    }
+    .perso {
+        max-width: 100%;
     }
 }
