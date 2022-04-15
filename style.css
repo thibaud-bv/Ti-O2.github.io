@@ -124,7 +124,10 @@ a:hover {
     color: white;
 }
 
-article a {
+article>h1>a {
+    color: white;
+}
+article>div>p>a {
     color: white;
 }
 
