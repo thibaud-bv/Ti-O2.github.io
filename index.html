@@ -10,31 +10,7 @@
     <title>Thibaud Bergez-Vigneau Portfolio</title>
 </head>
 
-<body onresize="pad()" onload="pad()">
-    <!--
-    <nav>
-        <ul>
-            <li>
-                <h3><a href="#presentation">About Me</a></h3>
-            </li>
-            <li><a href="#perso">Personnal Life</a></li>
-            <li><a href="#etudes">Studies</a></li>
-            <li><a href="mailto:thibaud.bergez@gmail.com">Contact me: <br>thibaud.bergez@gmail.com</a></li>
-        </ul>
-        <ul>
-            <li>
-                <h3><a href="#retex">Portfolio</a></h3>
-            </li>
-            <li><a href="#vidmod">Video Modifier</a></li>
-            <li><a href="#vm">Virtual Machine Set Up</a></li>
-            <li><a href="#lowatem">Lowatem</a></li>
-            <li><a href="#database">Database Creation</a></li>
-            <li><a href="#pong">Pong</a></li>
-        </ul>
-
-    </nav>
-    -->
-
+<body>
     <div class="main">
         <!--Présentation-->
 
@@ -51,12 +27,18 @@
                         About me
                     </h3>
                     <p>
-                             Hello and welcome to my portfolio.
-                        <br> I’m Thibaud Bergez-Vigneau, I’m 19, and on this page you will find information about multiple programming related projects of mine, some finished, some in progress.
-                        <br> In my free time I like to listen to music, especially stuff like experimental electronic music. I go to the flea-market early in the morning to find interesting old electronic equipment, cassettes or vinyl.
-                        <br> I also like to write code related to images and music, and I plan to make a program that can create generative music, as well as a music visualizer.
-                        <br> I speak French, English and Spanish, which allows me to communicate rather easily with people from other countries.
-                        <br> In the future I plan to continue making side projects related to images and music, in languages I don’t know yet, like C++ or Rust, if they are suited for the projects.
+                        Hello and welcome to my portfolio.
+                        <br> I’m Thibaud Bergez-Vigneau, I’m 19, and on this page you will find information about
+                        multiple programming related projects of mine, some finished, some in progress.
+                        <br> In my free time I like to listen to music, especially stuff like experimental electronic
+                        music. I go to the flea-market early in the morning to find interesting old electronic
+                        equipment, cassettes or vinyl.
+                        <br> I also like to write code related to images and music, and I plan to make a program that
+                        can create generative music, as well as a music visualizer.
+                        <br> I speak French, English and Spanish, which allows me to communicate rather easily with
+                        people from other countries.
+                        <br> In the future I plan to continue making side projects related to images and music, in
+                        languages I don’t know yet, like C++ or Rust, if they are suited for the projects.
                         <br> Contact me: thibaud.bergez@gmail.com
                     </p>
                 </div>
@@ -65,10 +47,16 @@
                         Studies
                     </h3>
                     <p>
-                        I am currently a second year student at the <a href="https://www.iut.u-bordeaux.fr/general/">IUT de Bordeaux</a> in France, in the Computer Science department.
-                        <br> Before that I went to Saint-Genès La Salle High School in Bordeaux, where I took Mathematics and Computer Science (NSI, Numérique et Sciences de l’Informatique) as principal subjects.
-                        <br> During the last year I took the “Advanced Mathematics” option to strengthen my mathematical knowledge and feed my curiosity. I was part of the “European Class”, which had added English classes.
-                        <br> Following this, I chose to take part in the International Track option of the BUT Informatique, with the goal of doing one or multiple internships abroad.
+                        I am currently a second year student at the <a href="https://www.iut.u-bordeaux.fr/general/">IUT
+                            de Bordeaux</a> in France, in the Computer Science department.
+                        <br> Before that I went to Saint-Genès La Salle High School in Bordeaux, where I took
+                        Mathematics and Computer Science (NSI, Numérique et Sciences de l’Informatique) as principal
+                        subjects.
+                        <br> During the last year I took the “Advanced Mathematics” option to strengthen my mathematical
+                        knowledge and feed my curiosity. I was part of the “European Class”, which had added English
+                        classes.
+                        <br> Following this, I chose to take part in the International Track option of the BUT
+                        Informatique, with the goal of doing one or multiple internships abroad.
                     </p>
                 </div>
             </div>
@@ -76,51 +64,53 @@
         </header>
         <article id="retex">
             <h2>(Work in progress, there are multiple projects missing, and I want to re-do the presentation)</h2>
-            <h1>
-                My Projects&nbsp;<a href="./thibaud_bergez-vigneau_projects.pdf">⇩</a>
-            </h1>
             <!--Testing using html instead of images-->
             <div class="projet" id="vidmod">
                 <table>
                     <tr>
-                        <td>Video Editor</td>
-                        <td>miam</td>
+                        <td class="light">Video Editor</td>
+                        <td class="dark"></td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="dark">
                             <p>Goal</p>
                             <ul>
-                                <li>Write a program capable of applying changes on a video, like filters and color modifying</li>
+                                <li>Write a program capable of applying changes on a video, like filters and color
+                                    modifying</li>
                                 <li>Sould also work with GIFs and single images</li>
                             </ul>
                         </td>
-                        <td>
-                            <p>Technologies and notions used:</p>
-                            <ul>
-                                <li>Python</li>
-                                <li>NumPy</li>
-                                <li>OpenCV</li>
-                            </ul>
+                        <td class="light">
+                            <p>Technologies used:</p>
                             <div class="logos">
-                                <img src="logos/1200px-Python-logo-notext.svg.png" alt="python logo">
-                                <img src="logos/numpylogo.png" alt="numpy logo">
-                                <img src="logos/OpenCV_Logo_with_text.png" alt="opencv logo">
+                                <figure>
+                                    <img src="logos/1200px-Python-logo-notext.svg.png" alt="python logo">
+                                    <figcaption>Python</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="logos/numpylogo.png" alt="numpy logo">
+                                    <figcaption>NumPy</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="logos/OpenCV_Logo_with_text.png" alt="opencv logo">
+                                    <figcaption>OpenCV</figcaption>
+                                </figure>
                             </div>
-
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="light">
                             <p>Result</p>
                             <ul>
                                 <li>Still unfinished, only has a few features</li>
                             </ul>
                             <div class="images">
-                                <img src="images/Screenshot 2022-04-15 062501.png" alt="Modified photo of a tree and houses">
-                                <img src="images/modvid.png" alt="placeholder">
+                                <img src="images/Screenshot 2022-04-15 062501.png"
+                                    alt="Modified photo of a tree and houses">
+                                <img src="images/placeholder.png" alt="other example">
                             </div>
                         </td>
-                        <td>
+                        <td class="dark">
                             <p>Acquired skills</p>
                             <ul>
                                 <li>Use to new Python libraries</li>
@@ -129,25 +119,252 @@
                     </tr>
                 </table>
             </div>
-            <div class="projet" id="testvidmod">
-                <p><a href="./images/modvid.png">Video Modifier</a></p>
-                <img src="./images/modvid.png">
+            <div class="projet" id="&lang">
+                <table>
+                    <tr>
+                        <td class="light">Esoteric Programming Language</td>
+                        <td class="dark"></td>
+                    </tr>
+                    <tr>
+                        <td class="dark">
+                            <p>Goal</p>
+                            <ul>
+                                <li>Create an assembly-inspired language with minimal instrutions</li>
+                                <li>Write an interpreter for it</li>
+                                <li>Write a compiler for it</li>
+                            </ul>
+                        </td>
+                        <td class="light">
+                            <p>Technologies used:</p>
+                            <div class="logos">
+                                <figure>
+                                    <img src="logos/1200px-Python-logo-notext.svg.png" alt="python logo">
+                                    <figcaption>Python</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="logos/clang.png" alt="c logo">
+                                    <figcaption>C</figcaption>
+                                </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="light">
+                            <p>Result</p>
+                            <ul>
+                                <li>Currently not finished, the documentation for the language is mostly done</li>
+                                <li>The interpreter is written in Python, but is to be reworked and written in another
+                                    language</li>
+                                <li>Compiler in C hasn't been started yet</li>
+                            </ul>
+                            <div class="images">
+                                <img src="images/&_prog_example.png" alt="Modified photo of a tree and houses">
+                                <img src="images/placeholder.png" alt="other example">
+                            </div>
+                        </td>
+                        <td class="dark">
+                            <p>Acquired skills</p>
+                            <ul>
+                                <li>Developping my creativity</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="projet" id="vm">
-                <p><a href="./images/vm.png">Virtual Machine Set Up</a></p>
-                <img src="./images/vm.png">
+                <table>
+                    <tr>
+                        <td class="light">Video Machine Set Up</td>
+                        <td class="dark"></td>
+                    </tr>
+                    <tr>
+                        <td class="dark">
+                            <p>Goal</p>
+                            <ul>
+                                <li>Create an environment to code in Rust on Linux with VMware</li>
+                                <li>Have Rust, Git and Visual Studio Code installed</li>
+                                <li>Informative bash prompt to work with Git</li>
+                            </ul>
+                        </td>
+                        <td class="light">
+                            <p>Technologies used:</p>
+                            <div class="logos">
+                                <figure>
+                                    <img src="logos/VMware_Player_logo.png" alt="vmware logo">
+                                    <figcaption>VMware</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="logos/Git-Logo-2Color.png" alt="git logo">
+                                    <figcaption>Git</figcaption>
+                                </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="light">
+                            <p>Result</p>
+                            <ul>
+                                <li>A Debian 11 Rust programming environment to work in teams, with different
+                                    permissions for different users</li>
+                            </ul>
+                            <div class="images">
+                                <img src="images/placeholder.png" alt="Custom prompt">
+                                <img src="images/placeholder.png" alt="Rust in VSCode">
+                            </div>
+                        </td>
+                        <td class="dark">
+                            <p>Acquired skills</p>
+                            <ul>
+                                <li>Learning to respect specifications</li>
+                                <li>Usage of multiple Operating Systems</li>
+                                <li>Working as team</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="projet" id="lowatem">
-                <p><a href="./images/lowatem.png">Lowatem</a></p>
-                <img src="./images/lowatem.png">
+                <table>
+                    <tr>
+                        <td class="light">Board game : Lowatem</td>
+                        <td class="dark"></td>
+                    </tr>
+                    <tr>
+                        <td class="dark">
+                            <p>Goal</p>
+                            <ul>
+                                <li>Code the different rules for how the game works</li>
+                                <li>Code two AIs to play the game with different startegies </li>
+                            </ul>
+                        </td>
+                        <td class="light">
+                            <p>Technologies used:</p>
+                            <div class="logos">
+                                <figure>
+                                    <img src="logos/Java_Logo.svg.png" alt="java logo">
+                                    <figcaption>Java</figcaption>
+                                </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="light">
+                            <p>Result</p>
+                            <ul>
+                                <li>A chess-like type of game about soldiers</li>
+                                <li>One AI that plays according to the "best" moves calculated on a spreadsheet</li>
+                                <li>One AI based on the Minimax algorithm</li>
+                            </ul>
+                            <div class="images">
+                                <img src="images/placeholder.png" alt="The game">
+                                <img src="images/placeholder.png" alt="Rust in VSCode">
+                            </div>
+                        </td>
+                        <td class="dark">
+                            <p>Acquired skills</p>
+                            <ul>
+                                <li>Problem solving</li>
+                                <li>Brainstorming with other people to better understand complex concepts</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="projet" id="database">
-                <p><a href="./images/db.png">Database Creation</a></p>
-                <img src="./images/db.png">
+                <table>
+                    <tr>
+                        <td class="light">Database Creation</td>
+                        <td class="dark"></td>
+                    </tr>
+                    <tr>
+                        <td class="dark">
+                            <p>Goal</p>
+                            <ul>
+                                <li>Create a database to store information relating to wine buying and reselling</li>
+                                <li>Create a mock-up of a software that would use this database</li>
+                            </ul>
+                        </td>
+                        <td class="light">
+                            <p>Technologies used:</p>
+                            <div class="logos">
+                                <figure>
+                                    <img src="logos/sqlserver.com.png" alt="sql server logo">
+                                    <figcaption>SQL Server</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="logos/SQLServerManagementStudio.png"
+                                        alt="sql server management studio logo">
+                                    <figcaption>SQL Server Management Server</figcaption>
+                                </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="light">
+                            <p>Result</p>
+                            <ul>
+                                <li>A functional database for a wine selling company</li>
+                                <li>A mock-up of the software that could be used to interact with the database</li>
+                            </ul>
+                            <div class="images">
+                                <img src="images/placeholder.png" alt="Mock-up of the website">
+                                <img src="images/placeholder.png" alt="Mock-up of one of the pages">
+                            </div>
+                        </td>
+                        <td class="dark">
+                            <p>Acquired skills</p>
+                            <ul>
+                                <li>Creation of a database in a real-life setting</li>
+                                <li>Mock-up creating experience</li>
+                                <li>Teamworking experience</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="projet" id="pong">
-                <p><a href="./images/pong.png">Pong</a></p>
-                <img src="./images/pong.png">
+                <table>
+                    <tr>
+                        <td class="light">Pong</td>
+                        <td class="dark"></td>
+                    </tr>
+                    <tr>
+                        <td class="dark">
+                            <p>Goal</p>
+                            <ul>
+                                <li>Make a pong-like game, playable by two players</li>
+                                <li>Gamemodes with four balls and obstacles</li>
+                            </ul>
+                        </td>
+                        <td class="light">
+                            <p>Technologies used:</p>
+                            <div class="logos">
+                                <figure>
+                                    <img src="logos/768px-Processing_3_logo.png" alt="processing 3 logo">
+                                    <figcaption>Processing 3</figcaption>
+                                </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="light">
+                            <p>Result</p>
+                            <ul>
+                                <li>A pong clone set in a dark forest</li>
+                            </ul>
+                            <div class="images">
+                                <img src="images/placeholder.png" alt="A ball and a paddle">
+                                <img src="images/placeholder.png" alt="Obstacles">
+                            </div>
+                        </td>
+                        <td class="dark">
+                            <p>Acquired skills</p>
+                            <ul>
+                                <li>Initiation to object oriented programming with Processing 3 / Java</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </article>
     </div>

@@ -1,24 +1,18 @@
 html {
     scroll-behavior: smooth;
+    font-weight: bold;
 }
 
 body {
-    width:100%;
-    max-width: 100vw;
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(100, 157, 184);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px;
-    border-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    /*nav tests*/
-    /*margin-left: 265px;*/
+    font-family: Helvetica, sans-serif;
 }
 
 .main {
     display: flex;
-    flex: 3;
     align-items: center;
     flex-direction: column;
 }
@@ -27,30 +21,33 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: rgb(255, 255, 255);
+    font-size: large;
+    color: white;
 }
 
 article {
-    align-items: flex-start;
-    padding-right: 1%;
+    align-items: center;
     padding-bottom: 0vh;
     color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
 }
 
 table {
-    width: 100vw;
-    height:100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.11);
     display: flex;
 }
 
 .images {
     display: flex;
     justify-content: space-around;
+    /*width:50vw;*/
 }
 
 .images>img {
-    height:30vw;
-    width: auto;
+    height:10vw;
+    margin-bottom: 1%;
 }
 
 .logos {
@@ -58,19 +55,43 @@ table {
     justify-content: space-around;
 }
 
-.logos>img {
-    max-width: 10%;
-    height: auto;
+.logos>figure>img {
+    height: 5vw;
+    margin-bottom: 1rem;
+}
+
+figure {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    text-align: center;
 }
 
 td {
-    border: 1px solid;
-    border-color:white;
+    /*border: 1px solid;
+    border-color:white;*/
+    width:50vw;
+    height: max-content;
+    border-radius: 0.25rem;
+    vertical-align: top;
+}
+
+.dark{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.light{
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .projet {
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.5);
     margin-top: 1vw;
+    
+    max-width: 80vw;
 }
 
 h1 {
@@ -96,32 +117,14 @@ div.presentation {
     padding-right: 1vh;
 }
 
-p>a {
-    color: rgb(32, 32, 32);
-}
-
-nav {
-    min-height: 100vh;
-    background-color: aliceblue;
-    border-radius: 2px;
-    top: 0;
-    left: 0;
-    /*nav tests*/
-    position: fixed;
-}
-
 ul {
     padding-left: 3%;
     padding-right: 3%;
     list-style: none;
 }
 
-td>ul {
-    flex-direction: column;
-}
-
-nav>ul>li>h3 {
-    margin-top: 0px;
+td>*:first-of-type {
+    margin: 0.5rem;
 }
 
 li>p {
@@ -130,40 +133,15 @@ li>p {
 }
 
 a {
-    color: black;
-    text-decoration: none;
+    color: purple;
 }
 
 a:hover {
     color: rgb(78, 78, 78);
 }
 
-.projet>img {
-    max-width: 100%;
-}
-
-.projet>p {
-    margin-bottom: 0px;
-    text-decoration: underline;
-}
-
 .perso {
     max-width: 50%;
-}
-
-.etudes>p>a {
-    color: rgb(201, 201, 201)
-}
-
-.etudes>p>a:hover {
-    color: white;
-}
-
-article>h1>a {
-    color: white;
-}
-article>div>p>a {
-    color: white;
 }
 
 @media screen and (max-width: 900px) {
