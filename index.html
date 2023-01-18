@@ -12,15 +12,9 @@
 
 <body>
     <div class="main">
-        <!--Présentation-->
-
         <header>
-
             <h2>Thibaud Bergez-Vigneau</h2>
             <h1>Portfolio</h1>
-
-            <!--Présentation-->
-
             <div class="presentation" id="presentation">
                 <div class="perso" id="perso">
                     <h3>
@@ -64,7 +58,6 @@
         </header>
         <article id="retex">
             <h2>(Work in progress, there are multiple projects missing, and I want to re-do the presentation)</h2>
-            <!--Testing using html instead of images-->
             <div class="projet" id="vidmod">
                 <table>
                     <tr>
@@ -107,13 +100,15 @@
                             <div class="images">
                                 <img src="images/Screenshot 2022-04-15 062501.png"
                                     alt="Modified photo of a tree and houses">
-                                <img src="images/placeholder.png" alt="other example">
+                                <img src="images/IMG_20210507_202514_revInv.jpg" alt="other example">
                             </div>
                         </td>
                         <td class="dark">
                             <p>Acquired skills</p>
                             <ul>
-                                <li>Use to new Python libraries</li>
+                                <li>Use of new Python libraries</li>
+                                <li>Code optimization</li>
+                                <li>Not giving up when something doesn't work</li>
                             </ul>
                         </td>
                     </tr>
@@ -159,7 +154,6 @@
                             </ul>
                             <div class="images">
                                 <img src="images/&_prog_example.png" alt="Modified photo of a tree and houses">
-                                <img src="images/placeholder.png" alt="other example">
                             </div>
                         </td>
                         <td class="dark">
@@ -171,10 +165,59 @@
                     </tr>
                 </table>
             </div>
+            <div class="projet" id="bloomfilter">
+                <table>
+                    <tr>
+                        <td class="light">Bloom filter implementation</td>
+                        <td class="dark"></td>
+                    </tr>
+                    <tr>
+                        <td class="dark">
+                            <p>Goal</p>
+                            <ul>
+                                <li>Do multiple implementations of the Bloom filter in Java</li>
+                                <li>Benchmark the different implementations</li>
+                                <li>Compute the optimal settings for the filter</li>
+                                <li>Write a simple genreric hash function for the filter to use</li>
+                            </ul>
+                        </td>
+                        <td class="light">
+                            <p>Technologies used:</p>
+                            <div class="logos">
+                                <figure>
+                                    <img src="logos/Java_Logo.svg.png" alt="java logo">
+                                    <figcaption>Java</figcaption>
+                                </figure>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="light">
+                            <p>Result</p>
+                            <ul>
+                                <li>Three different implementations of the Bloom filter, using Arrays, ArrayLists and LinkedList</li>
+                                <li>The benchmark tells us that the best implementation is the Array one, the worst is the LinkedList one</li>
+                                <li>The emptier the filter is, the more accurate it is, and more hash functions isn’t necessarily better</li>
+                            </ul>
+                            <div class="images">
+                                <img src="images/bf_contains_bench.png" alt="contains method benchmark">
+                                <img src="images/bf_hash.png" alt="hash function">
+                            </div>
+                        </td>
+                        <td class="dark">
+                            <p>Acquired skills</p>
+                            <ul>
+                                <li>Understanding what data structures to use in which situations</li>
+                                <li>Benchmarking a program</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <div class="projet" id="vm">
                 <table>
                     <tr>
-                        <td class="light">Video Machine Set Up</td>
+                        <td class="light">Virtual Machine Set Up</td>
                         <td class="dark"></td>
                     </tr>
                     <tr>
@@ -206,10 +249,11 @@
                             <ul>
                                 <li>A Debian 11 Rust programming environment to work in teams, with different
                                     permissions for different users</li>
+                                <li>I now use this Virtual Machine on my computer when I need it</li>
                             </ul>
                             <div class="images">
-                                <img src="images/placeholder.png" alt="Custom prompt">
-                                <img src="images/placeholder.png" alt="Rust in VSCode">
+                                <img src="images/vmbash.png" alt="Custom prompt">
+                                <img src="images/vmvsc.png" alt="Rust in VSCode">
                             </div>
                         </td>
                         <td class="dark">
@@ -256,8 +300,8 @@
                                 <li>One AI based on the Minimax algorithm</li>
                             </ul>
                             <div class="images">
-                                <img src="images/placeholder.png" alt="The game">
-                                <img src="images/placeholder.png" alt="Rust in VSCode">
+                                <img src="images/lowatemboard.png" alt="The game">
+                                <img src="images/lowatembrain.png" alt="spreadsheet">
                             </div>
                         </td>
                         <td class="dark">
@@ -307,8 +351,8 @@
                                 <li>A mock-up of the software that could be used to interact with the database</li>
                             </ul>
                             <div class="images">
-                                <img src="images/placeholder.png" alt="Mock-up of the website">
-                                <img src="images/placeholder.png" alt="Mock-up of one of the pages">
+                                <img src="images/dbmcd.png" alt="Mock-up of the website">
+                                <img src="images/dbmockup.png" alt="Conseptual Dat Model">
                             </div>
                         </td>
                         <td class="dark">
@@ -353,8 +397,8 @@
                                 <li>A pong clone set in a dark forest</li>
                             </ul>
                             <div class="images">
-                                <img src="images/placeholder.png" alt="A ball and a paddle">
-                                <img src="images/placeholder.png" alt="Obstacles">
+                                <img src="images/pongball.png" alt="A ball and a paddle">
+                                <img src="images/placeholder.png" alt="The game">
                             </div>
                         </td>
                         <td class="dark">
@@ -367,18 +411,6 @@
                 </table>
             </div>
         </article>
-        <footer>
-            <table>
-                <tr>
-                    <td class="dark">
-                        Miam
-                    </td>
-                    <td class="light">
-                        Wow
-                    </td>
-                </tr>
-            </table>
-        </footer>
     </div>
 </body>
 
