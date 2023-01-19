@@ -13,8 +13,10 @@ body {
 
 .main {
     display: flex;
-    align-items: center;
+    align-content: center;
     flex-direction: column;
+    justify-items: center;
+    width: 100%;
 }
 
 header {
